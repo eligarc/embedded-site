@@ -3,9 +3,12 @@
   <p>{{ infoParent }}</p>
   <hr />
   <div class="input-text">
-    <input type="text" placeholder="Ingresa mensaje" [formControl]="messageCtrlChild" />
-    <button (click)="sendMenssage()">
-        Enviar mensaje
-    </button>
-</div>
+    <input
+      type="text"
+      placeholder="Ingresa mensaje"
+      [formControl]="messageCtrlChild"
+    />
+    <button (click)="sendMenssage()">Enviar mensaje</button>
+  </div>
+  <button (click)="openDialog()">Open dialog</button>
 </div>
